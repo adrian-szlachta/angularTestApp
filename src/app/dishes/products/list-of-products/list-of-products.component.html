@@ -1,0 +1,57 @@
+<section class="list-of-users">
+  <h2 class="title--basic title--box">Lista użytkowników:</h2>
+  <hr class="line line--position" />
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">Lp.</th>
+        <th scope="col">Nazwa</th>
+        <th scope="col">Kategoria</th>
+        <th scope="col">Akcja</th>
+      </tr>
+      </thead>
+      <tbody id="usersTable">
+      <tr *ngFor="let product of products | async ;  index as index">
+        <td class="table__text">{{index+1}}</td>
+        <td class="table__text"> {{product.name}} </td>
+        <td class="table__text">{{getCategoryName(product.category_id)}} </td>
+
+        <td>
+          <div class="buttons buttons--table">
+            <button id="edit-btn" (click)="goToEditProduct(product.key)" class="button button--position button--smallest">EDYTUJ</button>
+          </div>
+        </td>
+        <td>
+          <div class="buttons buttons--table">
+            <button data-toggle="modal"  [attr.data-target]="'#deleteModal' + index"  class="button button--position button--smallest"> USUŃ </button>
+
+            <!-- Modal -->
+            <div class="modal fade" [attr.id]="'deleteModal'+index" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Czy na pewno chcesz usunąć produkt: {{product.name}}</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button button--position" (click)="removeProduct(product.key)" data-dismiss="modal"  class="button button--position">USUŃ</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </td>
+      </tr>
+
+
+
+      </tbody>
+    </table>
+  </div>
+</section>

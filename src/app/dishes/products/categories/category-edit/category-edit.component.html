@@ -1,0 +1,22 @@
+<section class="small-section">
+  <button class="button button--position button--come-back" routerLink="/dashboard/products/">
+    POWRÓT
+  </button>
+  <h2 class="title--basic title--box">Edytuj kategorie:</h2>
+  <hr class="line line--position" />
+  <!--<form [formGroup]="userGroup">-->
+  <form [formGroup]="categoryForm">
+    <p>
+      <mat-form-field>
+        <input matInput formControlName="name" placeholder="Nazwa" value="{{category?.name}}">
+        <mat-error *ngIf="categoryForm.get('name').hasError('required')">Nazwa jest wymagana</mat-error>
+      </mat-form-field>
+    </p>
+
+
+  </form>
+  <button id="addUser" mat-raised-button (click)="editCategory(category.key)" class="button button--position">EDYTUJ DANE</button>
+
+
+
+</section>

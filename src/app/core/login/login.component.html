@@ -1,0 +1,15 @@
+<div class="row justify-content-center login-container">
+  <div class="col-md-6 col-sm-8 login-content">
+    <img src="./assets/images/smart-restaurant-logo-white.png" class="login__logo">
+    <h3 class="login__title">Log in to the system</h3>
+    <mat-form-field class="d-block login__input">
+      <input matInput placeholder="Email" [(ngModel)]="credentials.email" required>
+      <mat-error>Email is required</mat-error>
+    </mat-form-field>
+    <mat-form-field class="d-block login__input">
+      <input matInput placeholder="Password" [(ngModel)]="credentials.password" required>
+      <mat-error>Password is required</mat-error>
+    </mat-form-field>
+    <button mat-raised-button class="button button--position" (click)="login()">LOG IN</button>
+  </div>
+</div>

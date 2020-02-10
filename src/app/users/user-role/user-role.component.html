@@ -1,0 +1,17 @@
+<section class="small-section">
+  <h2 class="title--basic title--box">Role użytkowników:</h2>
+  <hr class="line line--position" />
+  <div *ngFor="let role of roles | async ;  index as index">
+
+      <div class="row row--position">
+
+        <div class="col-md-6">
+          <p class="text--left">{{role.name}}</p>
+        </div>
+        <div class="col-md-6">
+          <button (click)="goToEditRole(role.permission_id)" mat-raised-button class="button button--right">Edytuj uprawnienia</button>
+        </div>
+      </div>
+  </div>
+
+</section>

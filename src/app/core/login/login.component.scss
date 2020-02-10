@@ -1,0 +1,58 @@
+$btn: #097cbb;
+$btn-hover: #085884;
+$content: #11121d;
+
+.login-container {
+  margin-top: 80px;
+}
+.login-content{
+  border-radius: 30px;
+  box-shadow: 0px 10px 20px 4px rgba(0, 0, 0, 0.74);
+  padding: 30px;
+  text-align: center;
+  background: $content;
+  p {
+    padding: 20px;
+  }
+}
+.login__logo {
+  margin: 0 auto;
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+.login__input{
+  background-color: #ffffff;
+  border-radius: 6px;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.login__title{
+  font-family: Oswald, Roboto, Arial;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 30px;
+  font-size: 34px;
+}
+.button{
+  border-radius: 16px;
+  background-color: $btn;
+  padding: 5px 38px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  font-size: 17px;
+  font-family: Roboto, Arial;
+}
+.button--position{
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.button:hover{
+  background-color: $btn-hover;
+}
+.login-content .mat-form-field .mat-input-element {
+  background: white;
+}

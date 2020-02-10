@@ -1,0 +1,29 @@
+<section class="small-section">
+  <button class="button button--position button--come-back" routerLink="/dashboard/products/">
+    POWRÓT
+  </button>
+  <h2 class="title--basic title--box">Edytuj Product:</h2>
+  <hr class="line line--position" />
+  <form [formGroup]="formProduct" (ngSubmit)="editProduct(product?.key)">
+    <p>
+      <mat-form-field>
+        <input matInput formControlName="name" placeholder="Nazwa" value="{{product?.name}}" ngModel>
+        <mat-error *ngIf="formProduct.get('name').hasError('required')">Nazwa jest wymagana</mat-error>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <mat-select  formControlName="category_id" placeholder="Kategoria" >
+          <mat-option *ngFor="let category of productsCategories" [value]="category.key" > {{ category.name }} </mat-option>
+        </mat-select>
+        <mat-error *ngIf="formProduct.get('category_id').hasError('required')">Wybierz kategorię dla produktu</mat-error>
+      </mat-form-field>
+    </p>
+
+    <button id="editProduct" mat-raised-button [disabled]="formProduct.invalid" type="submit" class="button button--position">EDYTUJ DANE</button>
+
+  </form>
+
+
+
+</section>

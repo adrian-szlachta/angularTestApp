@@ -1,0 +1,39 @@
+<section class="small-section">
+  <button class="button button--position button--come-back" routerLink="/dashboard/users/">
+   POWRÓT
+  </button>
+  <h2 class="title--basic title--box">Edytuj użytkownika:</h2>
+  <hr class="line line--position" />
+  <!--<form [formGroup]="userGroup">-->
+  <form [formGroup]="form" #userForm>
+    <p>
+      <mat-form-field>
+        <input matInput formControlName="email" placeholder="E-mail:" value="{{user?.email}}">
+        <mat-error *ngIf="form.get('email').hasError('required')">Email jest wymagany</mat-error>
+        <mat-error *ngIf="form.get('email').hasError('email')">Nieprawidłowa nazwa email</mat-error>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <input matInput formControlName="password" placeholder="Hasło:" #passwordInput type="password" value="{{user?.password}}">
+        <mat-error *ngIf="form.get('password').hasError('required')">Hasło jest wymagane</mat-error>
+        <mat-error *ngIf="form.get('password').hasError('minlength')">Minimalna długość hasła to 4 znaki</mat-error>
+        <mat-hint align="end">{{passwordInput.value.length}} /4</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <mat-select formControlName="role" placeholder="Rola" value="user?.role">
+          <mat-option *ngFor="let role of roles" [value]="role.value"> {{ role.label }} </mat-option>
+        </mat-select>
+        <mat-error *ngIf="form.get('role').hasError('required')">Wybierz rolę użytkownika</mat-error>
+      </mat-form-field>
+    </p>
+
+  </form>
+   <button id="addUser" mat-raised-button (click)="editUser(user.key)" class="button button--position">EDYTUJ DANE</button>
+
+
+
+</section>
+<!--<pre> {{form.value | json}}</pre>-->

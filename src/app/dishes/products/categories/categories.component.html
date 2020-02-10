@@ -1,0 +1,65 @@
+<section class="small-section">
+  <h2 class="title--basic title--box">Dodaj Kategorie:</h2>
+  <hr class="line line--position" />
+  <form [formGroup]="categoryForm" >
+    <p>
+      <mat-form-field>
+        <input matInput formControlName="name" placeholder="Nazwa:">
+      </mat-form-field>
+    </p>
+  </form>
+  <button id="addCategory" mat-raised-button (click)="createCategory()" class="button button--position">DODAJ</button>
+</section>
+<section class="list-of-users">
+  <h2 class="title--basic title--box">Lista Kategorii Produktów:</h2>
+  <hr class="line line--position" />
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">Email</th>
+        <th scope="col">Rola</th>
+      </tr>
+      </thead>
+      <tbody id="usersTable">
+      <tr *ngFor="let category of categories | async ;  index as index">
+        <td class="table__text"> {{category.name}} </td>
+
+        <td>
+          <div class="buttons buttons--table">
+            <button id="edit-btn" (click)="goToEditCategory(category.key)" class="button button--position button--smallest">EDYTUJ</button>
+          </div>
+        </td>
+        <td>
+          <div class="buttons buttons--table">
+            <button data-toggle="modal"  [attr.data-target]="'#deleteModal' + index"  class="button button--position button--smallest"> USUŃ </button>
+
+            <!-- Modal -->
+            <div class="modal fade" [attr.id]="'deleteModal'+index" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Czy na pewno chcesz usunąć kategorie: {{category.name}}</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button button--position" (click)="removeCategory(category.key)" data-dismiss="modal"  class="button button--position">USUŃ</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </td>
+      </tr>
+
+
+
+      </tbody>
+    </table>
+  </div>
+</section>

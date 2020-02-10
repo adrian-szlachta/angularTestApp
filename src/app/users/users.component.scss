@@ -1,0 +1,58 @@
+@import '../../styles';
+
+.title--side {
+  float: left;
+  margin-left: 8%;
+  width: 40%;
+}
+
+.form__input {
+  border-radius: 4px;
+  background-color: #3e3f48;
+  border: none;
+  font-family: Roboto, Arial;
+  color: white;
+  margin-top: 10px;
+  width: 280px;
+  display: inline-block;
+  padding: 10px 15px 10px 10px;
+}
+.form__select {
+  border-radius: 4px;
+  background-color: #3e3f48;
+  border: none;
+  font-family: Roboto, Arial;
+  color: white;
+  margin-top: 10px;
+  width: 280px;
+  display: inline-block;
+  padding: 10px 15px 10px 10px;
+}
+
+.form__input::placeholder,
+.form__select::placeholder{
+  color: white;
+  opacity: 1;
+}
+
+.form__input:-ms-input-placeholder,
+.form__select:-ms-input-placeholder{
+  color: white;
+}
+
+span.ng-tns-c8-3.ng-star-inserted {
+  color: white;
+  font-size: 20px;
+}
+.mat-form-field-infix {
+  border-bottom: 1px solid white;
+}
+.mat-form-field-appearance-legacy .mat-hint {
+  color: rgba(255, 255, 255, 0.54);
+}
+
+.mat-form-field .mat-input-element {
+  background: #1a1c2d;
+}
+
+

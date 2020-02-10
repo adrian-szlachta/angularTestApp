@@ -1,0 +1,186 @@
+<div class="top">
+  <div class="toggle-menu" (click)="onClickMe()" [ngClass]="status ? 'active' : 'inactive'">
+    <mat-icon class="menu__icon--open">keyboard_arrow_right</mat-icon>
+    <mat-icon class="menu__icon--close">close</mat-icon>
+  </div>
+  <ul class="nav nav-tabs position">
+    <li role="presentation" class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <img src="/assets/images/avatar.png" alt="avatar">
+        Użytkownik
+        <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li>Ustawienia</li>
+        <li role="separator" class="divider"></li>
+        <li (click)="logout()">Logout</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<menu [ngClass]="status ? 'menu--close' : 'menu--open'">
+  <div class="brand">
+    <img class="large-logo" src="/assets/images/smart-restaurant-logo-white-min.png" alt="">
+    <img class="small-logo" src="/assets/images/favicon.png" alt="">
+  </div>
+  <div class="link">
+    <a routerLink="/dashboard/website-is-coming">
+      <p>Tablica</p>
+      <img src="/assets/images/icon-dashboard.png" class="menu__icon" alt="dashboard">
+    </a>
+  </div>
+  <div class="link drop-down-link" data-toggle='0'>
+    <a role="button" data-toggle="collapse" href="#products_menu" aria-expanded="false" aria-controls="products_menu">
+      <p>Produkty</p>
+      <img src="/assets/images/icon-products.png" class="menu__icon" alt="products">
+    </a>
+    <div class="collapse" id="products_menu">
+      <div class="link">
+        <a routerLink="/dashboard/products">
+          <p>Dodaj produkt</p>
+          <img src="/assets/images/icon-addproducts.png" class="menu__icon" alt="add product">
+        </a>
+      </div>
+      <div class="link">
+        <a routerLink="/dashboard/website-is-coming">
+          <p>Składniki</p>
+          <img src="/assets/images/icon-properties.png" class="menu__icon" alt="properties">
+        </a>
+      </div>
+      <div class="link">
+        <a routerLink="/dashboard/website-is-coming">
+          <p>Kategorie</p>
+          <img src="/assets/images/icon-category.png" class="menu__icon" alt="categories">
+        </a>
+      </div>
+      <div class="link">
+        <a routerLink="/dashboard/website-is-coming">
+          <p>Dania</p>
+          <img src="/assets/images/icon-dishes.png" class="menu__icon" alt="dishes">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="link drop-down-link" data-toggle='0'>
+    <a role="button" data-toggle="collapse" href="#orders_menu" aria-expanded="false" aria-controls="orders_menu">
+      <p>Zamówienia</p>
+      <img src="/assets/images/icon-orders.png" class="menu__icon" alt="orders">
+    </a>
+    <div class="collapse" id="orders_menu">
+      <div class="link">
+        <a routerLink="/dashboard/website-is-coming">
+          <p>Dodaj Zamówienie</p>
+          <img src="/assets/images/icon-addorder.png" class="menu__icon" alt="add order">
+        </a>
+      </div>
+      <div class="link">
+        <a routerLink="/dashboard/website-is-coming">
+          <p>Lista zamówień</p>
+          <img src="/assets/images/icon-listorders.png" class="menu__icon" alt="list of orders">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="link drop-down-link">
+    <a role="button" data-toggle="collapse" href="#customers_menu" aria-expanded="false" aria-controls="customers_menu">
+      <p>Klienci</p>
+      <img src="/assets/images/icon-settings.png" class="menu__icon" alt="settings">
+    </a>
+    <div class="collapse" id="customers_menu">
+      <div class="link">
+        <a routerLink="/dashboard/website-is-coming">
+          <p>Lista klientów</p>
+          <img src="/assets/images/icon-user.png" class="menu__icon" alt="users">
+        </a>
+      </div>
+      <div class="link">
+        <a routerLink="/dashboard/website-is-coming">
+          <p>Klienci aktywni</p>
+          <img src="/assets/images/icon-user.png" class="menu__icon" alt="users">
+        </a>
+      </div>
+      <div class="link">
+        <a routerLink="/dashboard/website-is-coming">
+          <p>Goście</p>
+          <img src="/assets/images/icon-companyinfo.png" class="menu__icon" alt="company info">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="link drop-down-link">
+    <a role="button" data-toggle="collapse" href="#settings_menu" aria-expanded="false" aria-controls="settings_menu">
+      <p>Ustawienia</p>
+      <img src="/assets/images/icon-settings.png" class="menu__icon" alt="settings">
+    </a>
+    <div class="collapse" id="settings_menu">
+      <div class="link">
+        <a routerLink="/dashboard/users">
+          <p>Użytkownicy</p>
+          <img src="/assets/images/icon-user.png" class="menu__icon" alt="users">
+        </a>
+      </div>
+      <div class="link">
+        <a routerLink="/dashboard/users/role">
+          <p>Role użytkowników</p>
+          <img src="/assets/images/icon-user.png" class="menu__icon" alt="users">
+        </a>
+      </div>
+      <div class="link">
+        <a routerLink="/dashboard/website-is-coming">
+          <p>Dane firmy</p>
+          <img src="/assets/images/icon-companyinfo.png" class="menu__icon" alt="company info">
+        </a>
+      </div>
+      <div class="link">
+        <a routerLink="/dashboard/website-is-coming">
+          <p>Rachunki</p>
+          <img src="/assets/images/icon-companyinfo.png" class="menu__icon" alt="company info">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="link">
+    <a routerLink="/dashboard/website-is-coming">
+      <p>Stoliki</p>
+      <img src="/assets/images/icon-tables.png" class="menu__icon menu__icon--margin" alt="tables">
+    </a>
+  </div>
+  <div class="link">
+    <a routerLink="/dashboard/website-is-coming">
+      <p>Rezerwacje</p>
+      <img src="/assets/images/icon-reservations.png" class="menu__icon menu__icon--margin" alt="reservations">
+    </a>
+  </div>
+  <div class="link">
+    <a routerLink="/dashboard/website-is-coming">
+      <p>Kuchnia</p>
+      <img src="/assets/images/icon-kitchen.png" class="menu__icon menu__icon--margin" alt="kitchen">
+    </a>
+  </div>
+  <div class="link drop-down-link">
+    <a role="button" data-toggle="collapse" href="#marketing_menu" aria-expanded="false" aria-controls="marketing_menu">
+      <p>Marketing</p>
+      <img src="/assets/images/icon-settings.png" class="menu__icon" alt="settings">
+    </a>
+    <div class="collapse" id="marketing_menu">
+      <div class="link">
+        <a routerLink="/dashboard/website-is-coming">
+          <p>Facebook</p>
+          <img src="/assets/images/icon-user.png" class="menu__icon" alt="users">
+        </a>
+      </div>
+      <div class="link">
+        <a routerLink="/dashboard/website-is-coming">
+          <p>Instagram</p>
+          <img src="/assets/images/icon-user.png" class="menu__icon" alt="users">
+        </a>
+      </div>
+      <div class="link">
+        <a routerLink="/dashboard/website-is-coming">
+          <p>Twitter</p>
+          <img src="/assets/images/icon-companyinfo.png" class="menu__icon" alt="company info">
+        </a>
+      </div>
+    </div>
+  </div>
+</menu>

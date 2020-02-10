@@ -1,0 +1,25 @@
+<section class="small-section">
+  <h2 class="title--basic title--box">Dodaj produkt:</h2>
+  <hr class="line line--position" />
+  <form [formGroup]="formProduct" #productForm>
+    <p>
+      <mat-form-field>
+        <input matInput formControlName="name" placeholder="Nazwa:">
+        <mat-error>Nazwa jest wymagana</mat-error>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <mat-select formControlName="category_id" placeholder="Kategoria">
+          <mat-option *ngFor="let category of productsCategories" [value]="category.key"> {{ category.name }} </mat-option>
+        </mat-select>
+        <mat-error *ngIf="formProduct.get('category_id').hasError('required')">Wybierz kategorię dla produktu</mat-error>
+      </mat-form-field>
+    </p>
+
+  </form>
+  <button id="addProduct" mat-raised-button [disabled]="formProduct.invalid" (click)="createProduct()" class="button button--position">DODAJ</button>
+
+
+</section>
+<pre> {{formProduct.value | json}}</pre>

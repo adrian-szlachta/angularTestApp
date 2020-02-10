@@ -1,0 +1,988 @@
+.top {
+  width: 100%;
+  height: 60px;
+  background-color: #2b303b;
+  padding-right: 40px;
+}
+
+.position {
+  float: right;
+}
+
+.position a,
+.nav-tabs {
+  border: 0;
+}
+
+.position a.dropdown-toggle,
+.position a.dropdown-toggle:hover,
+.position a.dropdown-toggle:active,
+.position a.dropdown-toggle:focus {
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+.nav>li>a {
+  padding: 0;
+}
+
+.position img {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+menu {
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #2b303b;
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+  transition-duration: 0.4s;
+}
+.glyphicon-menu-hamburger{
+  display: none;
+  color: #2b303b;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.glyphicon-remove{
+  display: block;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: #2b303b;
+}
+.glyphicon-menu-hamburger:hover,
+.glyphicon-remove:hover{
+  color: white;
+  text-shadow: -1px 0 #2b303b, 0 1px #2b303b, 1px 0 #2b303b, 0 -1px #2b303b;
+}
+.brand {
+  width: 100%;
+  min-height: 50px;
+  display: flow-root;
+}
+
+.large-logo {
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 5%;
+}
+
+.small-logo {
+  width: 45px;
+  display: none;
+  float: right;
+}
+
+.link {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  transition-duration: 0.4s;
+  background: none;
+  display: inline-block;
+}
+
+.link:hover {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.drop-down-link .collapse .link p {
+  font-size: 18px;
+  padding-left: 20px;
+  transition-duration: 0.4s;
+}
+
+.collapse {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.drop-down-link-active:hover {
+  background: rgba(0, 0, 0, 0.0);
+}
+
+menu a {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+menu a:hover,
+menu a:focus,
+menu a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+menu p {
+  width: 200px;
+  font-size: 22px;
+  display: inline-block;
+  padding-left: 10px;
+  margin: 0;
+  line-height: 50px;
+}
+
+.link i {
+  font-size: 30px;
+  line-height: 50px;
+  transition-duration: 0.4s;
+  width: 50px;
+  text-align: center;
+  float: right;
+}
+
+.link p i {
+  font-size: 12px;
+}
+
+main {
+  width: 100%;
+  padding-left: 250px;
+  transition-duration: 0.4s;
+}
+
+.toggle-menu {
+  float: left;
+  margin-left: 250px;
+  color: #fff;
+  font-size: 35px;
+  width: 50px;
+  text-align: center;
+  transition-duration: 0.4s;
+  line-height: 44px;
+  padding-top: 10px;
+}
+
+.toggle-menu:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+
+/* Add Product Dashboard */
+
+body {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-color: #c3c3c3;
+}
+
+.title--basic {
+  font-family: Oswald, Roboto, Arial;
+  color: white;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.title--side {
+  float: left;
+  margin-left: 8%;
+  width: 40%;
+}
+
+main h1 {
+  font-family: Oswald, Roboto, Arial;
+  padding-left: 15px;
+  color: white;
+  text-shadow: 0px 0px 10px black;
+}
+
+.link p {
+  font-family: Oswald, Roboto, Arial;
+}
+
+section {
+  max-width: 800px;
+  background-color: #11121d;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 25px 0px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0px 25px 26.97px rgba(0, 0, 0, 0.74);
+}
+
+.dish {
+  display: none;
+}
+
+.drink {
+  display: none;
+}
+
+.line {
+  border-color: #090a0f;
+  width: auto;
+}
+
+.button {
+  border-radius: 16px;
+  background-color: #097cbb;
+  padding: 9px 38px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  font-size: 17px;
+  font-family: Roboto, Arial;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #085884;
+}
+
+.form__input {
+  border-radius: 4px;
+  background-color: #3e3f48;
+  border: none;
+  font-family: Roboto, Arial;
+  color: white;
+  margin-top: 10px;
+}
+
+.form__input--name,
+.form__input--desc,
+.form__input--number {
+  width: 280px;
+  display: block;
+  padding: 10px 15px 10px 10px;
+}
+
+.form__input--file {
+  border-radius: 4px;
+  border: none;
+  display: block;
+  margin-top: 10px;
+  padding: 10px 0px 10px 0px;
+  color: white;
+  font-family: Roboto, Arial;
+}
+
+.form__input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.form__input:-ms-input-placeholder {
+  color: white;
+}
+
+.checkbox {
+  font-family: Roboto, Arial;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.checkbox input[type=checkbox] {
+  -ms-transform: scale(2);
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+  -o-transform: scale(2);
+  padding: 10px;
+  margin-top: 8px;
+}
+
+.label {
+  margin-bottom: 0px;
+}
+
+.checkbox,
+.radio {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 37px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 11px;
+}
+
+.title--block {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  margin-left: 8%;
+  width: 40%;
+  margin-top: 10px;
+}
+
+.ingredients {
+  width: 87%;
+  margin: 0 auto;
+  margin-top: 7px;
+}
+
+.form__input--category {
+  display: inline-block;
+  padding: 10px 15px 10px 10px;
+  width: 280px;
+}
+
+.categoryContener {
+  display: inline-block;
+}
+
+
+/** INGREDIENTS */
+
+.buttons {
+  width: 50%;
+  display: inline;
+}
+
+.buttons input[type="submit"] {
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 5px;
+}
+
+.text {
+  font-family: Roboto, Arial;
+  color: white;
+  font-size: 22px;
+  float: left;
+  margin-left: 8%;
+  width: 40%;
+  margin-top: 5px;
+  text-align: center;
+}
+
+
+/* DISHES */
+
+.title--category {
+  text-align: center;
+  text-shadow: 0px 0px 20px black;
+  margin-bottom: 5px;
+}
+
+.dish__img {
+  width: 200px;
+  display: block;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.buttons--box {
+   width: -moz-fit-content;
+   width: -webkit-fit-content;
+   width: fit-content;
+   margin: 0 auto;
+   display: block;
+}
+
+.buttons--box input[type="submit"] {
+  display: inline;
+}
+
+.addedDishes,
+.addedTables {
+  max-width: 300px;
+  float: left;
+  margin-left: 18px;
+  padding: 25px 10px;
+  margin-top: 3%;
+}
+
+.title--box {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.sushi {
+  float: left;
+  width: 100%;
+}
+
+
+/* RESERVATIONS */
+
+.text--right {
+  float: none;
+  text-align: left;
+  display: inline-block;
+  margin-top: 11px;
+}
+
+
+/* TABLE */
+
+.text--box {
+  margin-left: 0;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.table {
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 13px;
+}
+
+.listReservations,
+.listOfOrders {
+  max-width: 1100px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+  padding: 9px;
+  vertical-align: baseline;
+  border-bottom: 2px solid #090a0f;
+}
+
+.table>thead>tr>th {
+  padding: 9px;
+  vertical-align: baseline;
+  border-bottom: 2px solid #090a0f;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+  padding: 8px;
+  vertical-align: baseline;
+  border-top: 2px solid #090a0f;
+}
+
+.line--table {
+  margin-top: 25px;
+  margin-bottom: 4px;
+}
+
+.table tr {
+  font-size: 15px;
+}
+
+.button--smallest {
+  font-size: 14px;
+  padding: 8px 30px;
+}
+
+
+/* ORDERS */
+
+
+/* LIST OF ORDERS */
+
+.listOfOrders {
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 33px;
+}
+
+.listOfOrders .table>tbody>tr>td,
+.listOfOrders .table>tbody>tr>th,
+.listOfOrders .table>tfoot>tr>td,
+.listOfOrders .table>tfoot>tr>th,
+.listOfOrders .table>thead>tr>td,
+.listOfOrders .table>thead>tr>th {
+  padding-left: 15px;
+}
+
+.listOfOrders .button--smallest {
+  padding: 8px 23px;
+}
+
+.addOrders .table-responsive,
+.editOrders .table-responsive,
+.detailsOfOrders .table-responsive{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.addOrders .table td,
+.addOrders .table th{
+  text-align: center;
+}
+
+.addOrders,
+.editOrders,
+.detailsOfOrders {
+  max-width: 650px;
+}
+
+.chooseTable {
+  display: none;
+}
+
+.paragraph {
+  font-size: 16px;
+  font-family: Roboto, Arial;
+  color: white;
+  width: 50%;
+  float: right;
+  padding-right: 20px;
+  margin-bottom: 21px;
+}
+
+.editOrders input[type=submit],
+.detailsOfOrders input[type=submit]  {
+  clear: both;
+}
+
+.paragraph--larger {
+  font-size: 20px;
+}
+
+.deliveryOption-edit {
+  display: none;
+}
+
+.deliveryOption--added {
+  transition-duration: 0.2s;
+}
+
+.well {
+  background-image: none;
+  background-color: #11121d;
+  margin-top: 20px;
+}
+
+.detailsOfOrders .table-responsive th {
+  width: 50%;
+}
+.listOfUsers .table-responsive th{
+  width: 25%;
+  text-align: center;
+}
+
+.line {
+  clear: both;
+}
+.addUsers{
+    max-width: 590px;
+}
+
+.companyInfo .buttons--box {
+    width: 272px;
+}
+.companyInfo {
+    max-width: 680px;
+}
+.kitchen {
+    max-width: 447px;
+    float: left;
+    margin-left: 25px;
+    padding: 26px 0px;
+    margin-top: 3%;
+}
+.kitchen .text--box {
+    margin-top: -5px;
+    margin-bottom: 16px;
+}
+.kitchen .button {
+    padding: 8px 30px;
+}
+.kitchen .text {
+    width: 47%;
+}
+.kitchen .text--box {
+    width: 100%;
+}
+@media (max-width: 500px){
+  .text{
+    font-size: 18px;
+  }
+}
+
+.buttons{
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+/* MEDIA QUERIES */
+
+@media (max-width: 1050px) {
+  .listReservations{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 825px) {
+  .text--right {
+    text-align: center;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .title--side,
+  .title--block {
+    float: none;
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .form__input,
+  .form__input--category,
+  .form__input--file {
+    margin: 0 auto;
+  }
+  .form__input--category {
+    display: block;
+  }
+  .categoryContener {
+    margin: 0 auto;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+    display: block;
+  }
+
+  .paragraph {
+    width: 100%;
+    float: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+  }
+  .listOfUsers,
+  .listOfOrders,
+  .addCategories,
+  .addIngredients,
+  .addProducts,
+  .companyInfo,
+  .addReservations{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    border: none;
+  }
+}
+
+@media (max-width: 750px) {
+ .buttons--table{
+    margin: 0 auto;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+    display: block;
+  }
+  .title--nameIngredients {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .buttons input[type="submit"] {
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 6px;
+    margin: 0 auto;
+  }
+  .text {
+    float: left;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 686px) {
+  .addedDishes,
+  .addedTables,
+  .kitchen {
+    float: none;
+    margin: 3% auto;
+  }
+  .title--category {
+    margin-bottom: 30px;
+  }
+  .addUsers{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .form__input--name,
+  .form__input--number,
+  .form__input--desc,
+  .form__input--category {
+    width: 240px;
+  }
+  .addProducts,
+  .addCategories,
+  .addIngredients,
+  .addReservations,
+  .listOfOrders,
+  .addOrders,
+  .editOrders,
+  .detailsOfOrders,
+  .addUsers,
+  .listOfUsers,
+  .companyInfo {
+    margin-left: 3px;
+    margin-right: 10px;
+  }
+  .form__input--file {
+    display: block;
+    margin: 0 auto;
+    width: 190px;
+  }
+}
+
+@media (max-width: 350px) {
+  .addCategories .buttons,
+  .addIngredients .buttons {
+    width: 212px;
+  }
+  .addedTables,
+  .kitchen {
+    margin-left: 5px;
+  }
+  .button {
+    padding: 9px 25px;
+  }
+}
+.button--issuedOrder{
+  background-color: #8bc34a;
+}
+
+.button--issuedOrder:hover{
+  background-color: #618e2e;
+}
+.dashboard__box{
+  min-width: 307px;
+  float: left;
+  margin-left: 18px;
+  padding: 25px 10px;
+  margin-top: 3%;
+  margin-right: 10px;
+}
+.dashboard__box .text--box,
+.dashboard__income .text--box{
+    margin-top: 0px;
+}
+.orderStatus--inprogress{
+  background-color: #e21313;
+}
+.orderStatus--done{
+  background-color: green;
+}
+
+.menu__icon{
+  margin-left: 9px;
+  margin-top: -11px;
+}
+
+.menu__icon--margin{
+  margin-left: 6px;
+}
+
+.dashboard__income{
+  clear: both;
+}
+.dashboard__boxes{
+  margin: 0 auto;
+  width: fit-content;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+}
+@media (max-width: 1154px){
+  .dashboard__box:last-child{
+    clear: both;
+  }
+}
+@media (max-width: 820px){
+  .dashboard__box{
+    clear: both;
+  }
+  .dashboard__numberOfOrders .title--category {
+    margin-bottom: 22px;
+  }
+  .dashboard__income .title--category {
+    margin-bottom: 22px;
+  }
+}
+#fail{
+  color:#fff;
+  font-size: 27px;
+  text-align: center;
+}
+
+/*  Toggle Switch  */
+
+.switch {
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  /*width: 400px;*/
+  float: left;
+  margin: 0 auto;
+}
+
+.toggleSwitch span span {
+  display: none;
+}
+
+@media only screen {
+  .toggleSwitch {
+    display: inline-block;
+    height: 18px;
+    position: relative;
+    overflow: visible;
+    padding: 0;
+    /*margin-left: 50px;*/
+    cursor: pointer;
+    width: 40px
+  }
+  .toggleSwitch * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .toggleSwitch label,
+  .toggleSwitch > span {
+    line-height: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+  .toggleSwitch input:focus ~ a,
+  .toggleSwitch input:focus + label {
+    outline: none;
+  }
+  .toggleSwitch label {
+    position: relative;
+    z-index: 3;
+    display: block;
+    width: 100%;
+  }
+  .toggleSwitch input {
+    position: absolute;
+    opacity: 0;
+    z-index: 5;
+  }
+  .toggleSwitch > span {
+    position: absolute;
+    left: -50px;
+    width: 100%;
+    margin: 0;
+    padding-right: 50px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .toggleSwitch > span span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: block;
+    width: 50%;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 0.9em;
+    width: 100%;
+    left: 15%;
+    top: -1px;
+    opacity: 0;
+  }
+  .toggleSwitch a {
+    position: absolute;
+    right: 50%;
+    z-index: 4;
+    display: block;
+    height: 100%;
+    padding: 0;
+    left: 2px;
+    width: 18px;
+    background-color: #fff;
+    border: 1px solid #CCC;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  .toggleSwitch > span span:first-of-type {
+    color: #ccc;
+    opacity: 1;
+    left: 45%;
+  }
+  .toggleSwitch > span:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50px;
+    top: -2px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .toggleSwitch input:checked ~ a {
+    border-color: #fff;
+    left: 100%;
+    margin-left: -8px;
+  }
+  .toggleSwitch input:checked ~ span:before {
+    border-color: #0097D1;
+    box-shadow: inset 0 0 0 30px #0097D1;
+  }
+  .toggleSwitch input:checked ~ span span:first-of-type {
+    opacity: 0;
+  }
+  .toggleSwitch input:checked ~ span span:last-of-type {
+    opacity: 1;
+    color: #fff;
+  }
+  /* Switch Sizes */
+  .toggleSwitch.large {
+    width: 72px;
+    height: 27px;
+  }
+  .toggleSwitch.large a {
+    width: 27px;
+  }
+  .toggleSwitch.large > span {
+    height: 29px;
+    line-height: 28px;
+  }
+  .toggleSwitch.large input:checked ~ a {
+    left: 52px;
+  }
+  .toggleSwitch.large > span span {
+    font-size: 1.1em;
+  }
+  .toggleSwitch.large > span span:first-of-type {
+    left: 50%;
+  }
+}
+
+/*  End Toggle Switch  */

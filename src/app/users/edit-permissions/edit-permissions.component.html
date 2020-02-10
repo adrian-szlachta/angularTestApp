@@ -1,0 +1,128 @@
+<section class="small-section">
+  <button class="button button--position button--come-back" routerLink="/dashboard/users/role">
+    POWRÓT
+  </button>
+  <h2 class="title--basic title--box">Edytuj uprawnienia: Kucharz</h2>
+  <hr class="line line--position" />
+  <div class="row row--position">
+    <div class="col-md-6">
+      <p class="text--left">Tablica</p>
+    </div>
+    <div class="col-md-6">
+      <mat-slide-toggle
+        [checked]="permission?.dashboard===1"
+        class="mat-slide-toggle"
+        [color]="color"
+        (change)="changeDashboardValue( permission?.dashboard )">
+      </mat-slide-toggle>
+    </div>
+  </div>
+  <div class="row row--position">
+    <div class="col-md-6">
+      <p class="text--left">Produkty</p>
+    </div>
+    <div class="col-md-6">
+      <mat-slide-toggle
+        [checked]="permission?.products===1"
+        class="mat-slide-toggle"
+        [color]="color"
+        (change)="changeProductsValue( permission?.products )">
+      </mat-slide-toggle>
+    </div>
+  </div>
+  <div class="row row--position">
+    <div class="col-md-6">
+      <p class="text--left">Zamówienia</p>
+    </div>
+    <div class="col-md-6">
+      <mat-slide-toggle
+        [checked]="permission?.orders===1"
+        class="mat-slide-toggle"
+        [color]="color"
+        (change)="changeOrdersValue( permission?.orders )">
+      </mat-slide-toggle>
+    </div>
+  </div>
+  <div class="row row--position">
+    <div class="col-md-6">
+      <p class="text--left">Klienci</p>
+    </div>
+    <div class="col-md-6">
+      <mat-slide-toggle
+        [checked]="permission?.customers===1"
+        class="mat-slide-toggle"
+        [color]="color"
+        (change)="changeCustomersValue( permission?.customers )">
+      </mat-slide-toggle>
+    </div>
+  </div>
+  <div class="row row--position">
+    <div class="col-md-6">
+      <p class="text--left">Ustawienia</p>
+    </div>
+    <div class="col-md-6">
+      <mat-slide-toggle
+        [checked]="permission?.settings===1"
+        class="mat-slide-toggle"
+        [color]="color"
+        (change)="changeSettingsValue( permission?.settings )">
+      </mat-slide-toggle>
+    </div>
+  </div>
+  <div class="row row--position">
+    <div class="col-md-6">
+      <p class="text--left">Stoliki</p>
+    </div>
+    <div class="col-md-6">
+      <mat-slide-toggle
+        [checked]="permission?.tables===1"
+        class="mat-slide-toggle"
+        [color]="color"
+        (change)="changeTablesValue( permission?.tables )">
+      </mat-slide-toggle>
+    </div>
+  </div>
+  <div class="row row--position">
+    <div class="col-md-6">
+      <p class="text--left">Rezerwacje</p>
+    </div>
+    <div class="col-md-6">
+      <mat-slide-toggle
+        [checked]="permission?.reservations===1"
+        class="mat-slide-toggle"
+        [color]="color"
+        (change)="changeReservationsValue( permission?.reservations )">
+      </mat-slide-toggle>
+    </div>
+  </div>
+  <div class="row row--position">
+    <div class="col-md-6">
+      <p class="text--left">Kuchnia</p>
+    </div>
+    <div class="col-md-6">
+      <mat-slide-toggle
+        [checked]="permission?.kitchen===1"
+        class="mat-slide-toggle"
+        [color]="color"
+        (change)="changeKitchenValue( permission?.kitchen )">
+      </mat-slide-toggle>
+    </div>
+  </div>
+  <div class="row row--position">
+    <div class="col-md-6">
+      <p class="text--left">Marketing</p>
+    </div>
+    <div class="col-md-6">
+      <mat-slide-toggle
+        [checked]="permission?.marketing===1"
+        class="mat-slide-toggle"
+        [color]="color"
+        (change)="changeMarketingValue( permission?.marketing )">
+      </mat-slide-toggle>
+    </div>
+  </div>
+
+  <button id="editPermissions" mat-raised-button (click)="editPermission(permission.key)" class="button button--position">Zapisz</button>
+
+
+</section>
